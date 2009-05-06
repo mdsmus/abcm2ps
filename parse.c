@@ -827,6 +827,7 @@ static char *get_lyric(char *p)
 		/* store word in next note */
 		while (s != 0
 		       && (s->as.type != ABC_T_NOTE
+			   && s->as.type != ABC_T_REST
 			   || (s->as.flags & ABC_F_GRACE)))
 			s = s->next;
 		if (s == 0)
@@ -866,6 +867,7 @@ static char *get_lyric(char *p)
 	}
 	while (s != 0
 	       && (s->as.type != ABC_T_NOTE
+		   && s->as.type != ABC_T_REST
 		   || (s->as.flags & ABC_F_GRACE)))
 		s = s->next;
 	if (s != 0)
