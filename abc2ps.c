@@ -212,6 +212,9 @@ int main(int argc,
 					cfmt.printtempo = 0;
 					lock_fmt(&cfmt.printtempo);
 					break;
+				case 'r':
+					cfmt.wordsoverrests = 0;
+					break;
 				case 'T': {
 					struct cmdtblt_s *cmdtblt;
 					aaa = p + 1;
@@ -308,6 +311,9 @@ int main(int argc,
 				case 'Q':
 					cfmt.printtempo = 1;
 					lock_fmt(&cfmt.printtempo);
+					break;
+				case 'r':
+					cfmt.wordsoverrests = 1;
 					break;
 				case 'u':
 					cfmt.abc2pscompat = 1;
@@ -747,6 +753,7 @@ static void usage(void)
 		"             xref list of tunes to select\n"
 		"     -u      abc2ps behaviour\n"
 		"     -L n    set char encoding to Latin number n\n"
+		"     -r      allow lyrics to be printed with rests\n"
 		"  .help/configuration:\n"
 		"     -V      show program version\n"
 		"     -h      show this command summary\n"
