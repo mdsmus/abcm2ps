@@ -1,0 +1,23 @@
+X: 1
+T: Chorale 18
+O: J. S. Bach
+M: 4/4
+L: 1/8
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K: G
+%%score Solo  [(S A) (T B L)]  {RH | (LH1 LH2)}
+V:S
+ G2 G A B2 C'2 |
+V:A
+ D2 E F G2 F E |
+V:T
+ b,,2 c,2 d,2 c,2 |
+V:B
+ g,,2 c,,2 g,,, g,, a,,2 |
+V:L
+ x2 x x x x x x
+w: I IV viio6.4 I I viio6 -
+w: I IV viio6.4 I I viio6 -
