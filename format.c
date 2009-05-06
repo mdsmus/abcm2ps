@@ -403,6 +403,7 @@ void set_format(void)
 	f->dateformat = strdup("\\%b \\%e, \\%Y \\%H:\\%M");
 	f->gracespace = (65 << 16) | (80 << 8) | 120;	/* left-inside-right - unit 1/10 pt */
 	f->textoption = T_LEFT;
+	f->wordsoverrests = 0; /* We should not allow words over rests unless we are asked for it */
 	f->ndfont = FONT_DYN;
 	fontspec(&f->font_tb[ANNOTATIONFONT], "Helvetica", 0, 12.0);
 	fontspec(&f->font_tb[COMPOSERFONT], "Times-Italic", 0, 14.0);

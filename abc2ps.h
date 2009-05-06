@@ -262,6 +262,7 @@ struct FORMAT { 		/* struct for page layout */
 	char ndfont;		/* current index of dynamic fonts */
 	unsigned char gcf, anf, vof;	/* fonts for
 				* guitar chords, annotations and lyrics */
+	int wordsoverrests; /* points whether we should print or not words over rests */
 };
 
 extern struct FORMAT cfmt;	/* current local format for output */
