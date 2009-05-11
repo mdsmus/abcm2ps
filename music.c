@@ -1870,6 +1870,9 @@ static struct SYMBOL *set_nl(struct SYMBOL *s)
 {
 	int time, done;
 
+        if (s == NULL) {
+           return s;
+        }
 	/* if normal symbol, cut here */
 	switch (s->type) {
 	case CLEF:
